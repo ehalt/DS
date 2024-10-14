@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+void selection_sort(int arr[], int n) {
+    int min_index, temp;
+    for (int i = 0; i < n - 1; i++) {
+        min_index = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[min_index]) {
+                min_index = j;
+            }
+        }
+        if (min_index != i) {
+            temp = arr[i];
+            arr[i] = arr[min_index];
+            arr[min_index] = temp;
+        }
+    }
+}
+
+void print_arr(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+
+int main() {
+
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    selection_sort(arr, n);
+    print_arr(arr, n);
+    
+    return 0;
+}
