@@ -1,0 +1,14 @@
+pseudo code : 
+1. quick sort 
+2. merge sort 
+3. MST
+4. prim's algo
+5. kruskal algo
+
+simulation + pseudo code 
+1. bellman ford algo
+2. Dijkstra 
+3. 0/1 knapsack
+
+MCQ:
+1. time complexity 
