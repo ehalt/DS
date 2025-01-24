@@ -4,6 +4,10 @@ Algorithm: DFS(u)
 3. if Color[v] = WHITE then
 4. do DFS(v)
 5. Color[v] = BLACK
+
+
+
+  
 The Breadth First Search algorithm is given below:
 Color = 1D Array of size |V|
 Adj = 2D List of |V| rows
